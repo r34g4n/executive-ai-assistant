@@ -11,5 +11,5 @@ def get_config(config: dict):
     if "email" in config["configurable"]:
         return config["configurable"]
     else:
-        with open(_ROOT.joinpath("config.yaml")) as stream:
+        with open(_ROOT.joinpath("private.config.yaml")) as stream:
             return yaml.safe_load(stream)
